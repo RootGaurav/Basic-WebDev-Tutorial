@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CSS SHADOWS</title>
+    <style>
+        :root
+        {
+            --newcolor:pink;
+        }
+        .container
+        {
+            background-color: rgb(158, 146, 146);
+            /* background-color: var(--newcolor); */
+            border:2px solid black;
+            height: 600px;
+            width:600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            background-color: rgb(200, 194, 200);
+            border:px solid rgb(195, 216, 216);
+            height: 500px;
+            width: 500px;
+            border-radius: 5px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+
+            /* box-shadow: 10px 10px black; */
+            /* box-shadow: 10px 10px 10px black; */
+            /* box-shadow: 10px 10px 10px 5px rgb(105, 66, 105); */
+            /* box-shadow:inset 10px 10px 10px 5px rgb(105, 66, 105); */
+            box-shadow: 10px 10px 10px 5px rgb(105, 66, 105), 10px 15px 10px 5px rgb(16, 17, 1);
+        }
+        .headi
+        {
+            border:px solid black;
+            margin:5px;
+            border:5px;
+            font-size: 20px;
+            text-shadow: 3px 3px 2px rgb(255, 255, 255);
+
+        }
+        .image{
+            border:px solid black;
+            margin:5px;
+            border:5px;
+            
+        }
+        .para
+        {
+            border:px solid black;
+            margin:5px;
+            border:5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="headi">
+                <h1>Goku</h1>
+            </div>
+            <div class="image"> 
+                <img src="goku.png" alt="">
+            </div>
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus assumenda rem, omnis iure doloribus atque ut possimus natus numquam est non distinctio fuga aliquid sapiente eligendi doloremque eius accusamus aspernatur, esse officiis inventore dolores. Itaque officiis accusamus veniam corrupti maiores consequuntur iste ratione non. </p>
+            </div>
+        </div>            
+        </div>
+
+   
+</body>
+</html>

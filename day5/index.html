@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            background-color: rgb(158, 146, 146);
+            border:2px solid black;
+            height: 600px;
+            width: 600px;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+        }
+        .box
+        {
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 10px 10px rgb(40, 39, 37);
+            animation-name: rightMove;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-timing-function: linear; */
+            animation-timing-function:cubic-bezier(0.35, 1.24, 0.78,-0.01);
+            animation-direction: alternate;
+            /* animation-fill-mode: forwards; */
+
+            
+        }
+        @keyframes rightMove
+        {
+            from
+            {
+                top:500px;
+                left:0;
+            }
+            to
+            {
+                top:500px;
+                left:500px;
+            }
+        }
+        .box2
+        {
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+            border-radius: 10px;
+            box-shadow: 10px 10px rgb(40, 39, 37);
+            animation-name: leftMove;
+            animation-duration: 5s;
+            position: relative;
+            animation-iteration-count: infinite;
+            /* animation-timing-function: linear; */
+            animation-timing-function:cubic-bezier(0, 1.17, 0.87,-0.42);
+            animation-direction: alternate;
+            /* animation-fill-mode: forwards; */
+
+            
+        }
+        @keyframes leftMove
+        {
+            from
+            {
+                top:0;
+                left:500px;
+            }
+            to
+            {
+                top:0;
+                left:0;
+            }
+        }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div class="box2">
+
+        </div>
+    </div>
+    
+</body>
+</html>

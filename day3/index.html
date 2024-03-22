@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA QUERY</title>
+    <style>
+        .box
+        {
+            background-color: aqua;
+            height: 200px;
+            width:200px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        @media (min-width:300px) and (max-width:500px) {
+            .box
+            {
+                background-color: brown;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Hello world
+    </div>
+</body>
+</html>

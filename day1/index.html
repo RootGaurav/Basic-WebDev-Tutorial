@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <link rel="shortcut icon" href="goku.png" type="image/x-icon">
+    <style>
+       
+        .container{
+            background-color: pink;
+            border: 3px solid blue;
+            width: 50%;
+            height:20%;
+            padding: 5px;
+           
+        }
+        .child
+        {
+            background-color: aqua;
+            border: 3px solid red;
+            width: 20%;
+            height:20%;
+            padding: 5px;
+            margin:5px;
+        }
+        .wrapper {
+            font-size: 20px;
+            background-color: red;
+            width: 50vw;
+            
+        }
+
+        .px {
+            width: 200px;
+            background-color: aqua;
+        }
+
+        .vw {
+            width: 50vw;
+            background-color: yellow;
+            font-size: 2rem;
+            width: 3em;
+        }
+
+        .em {
+            width: 10em;
+            font-size: 2em;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child">
+            This is gaurav here
+        </div>
+        <div class="child">
+            This is gaurav here
+
+        </div>
+        <div class="child">
+            This is gaurav here
+
+        </div>
+        <div class="child">
+            This is gaurav here
+
+        </div>
+        <div class="child">
+            This is gaurav here
+
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="box px">I am 200px wide</div>
+        <div class="box vw">I am 10vw wide</div>
+        <div class="box em">I am 10em wide</div>
+    </div>
+
+</body>
+
+</html>
