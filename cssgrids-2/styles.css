@@ -1,0 +1,26 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container
+{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background-color: beige;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    gap: 2%;
+    grid-template-rows:repeat(auto-fit, minmax(200px, 200px)) ;
+    justify-content: center;
+}
+.item
+{
+    padding: 5%;
+    background-color: aqua;
+}
