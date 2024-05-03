@@ -9,5 +9,5 @@
 // }
 // let count=0;
 // countvowel("aeiou");
-// console.log(count);
+
 
